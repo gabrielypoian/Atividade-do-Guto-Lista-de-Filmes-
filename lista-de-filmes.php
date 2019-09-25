@@ -1,14 +1,10 @@
 <?php
 
-$infoAranha = array('Homem Aranha', '133m', '2019');
-$infoCaptain = array('Capitã Marvel', '120m', '2019');
-$infoVPantera = array('Pantera Negra', '134m', '2018');
+$filmes = ['Homem Aranha', 'Pantera Negra', 'Homem-Formiga e a Verpa'];
+echo count($filmes);
 
-list($Nome, $duracao, $ano) = $infoAranha;
-echo "$Nome, $duracao e $ano. <br>";
+echo "<br>Filmes<br>";
 
-list($Nome, $duracao, $ano) = $infoCaptain;
-echo "$Nome, $duracao e $ano. <br>";
-
-list($Nome, $duracao, $ano) = $infoVPantera;
-echo "$Nome, $duracao e $ano. <br>";
+for($i = 0; $i < count($filmes); $i++){
+    echo $filmes[$i] . "<br>";
+}
